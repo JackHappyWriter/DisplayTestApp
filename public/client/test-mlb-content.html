@@ -18,7 +18,7 @@
             setTimeout(initWidget, 200);
         }
 
-        !function (e, t, n, c, i, a, s) { i = i || 'EcalWidget', e.EcalWidgetObject = i, e[i] = e[i] || function () { (e[i].q = e[i].q || []).push(arguments) }, a = t.createElement(n), a.onload = widgetScriptLoaded, s = t.getElementsByTagName(n)[0], e[i].u = c, a.async = 1, a.src = c, s.parentNode.insertBefore(a, s) }(window, document, 'script', 'https://sync.ecal.com/button/v1/main.js' + '?t=' + Date.now());
+        !function (e, t, n, c, i, a, s) { i = i || 'EcalWidget', e.EcalWidgetObject = i, e[i] = e[i] || function () { (e[i].q = e[i].q || []).push(arguments) }, a = t.createElement(n), a.onload = widgetScriptLoaded, s = t.getElementsByTagName(n)[0], e[i].u = c, a.async = 1, a.src = c, s.parentNode.insertBefore(a, s) }(window, document, 'script', 'https://testing-sync.ecal.com/button/v1/main.js' + '?t=' + Date.now());
 
         function initWidget () {
             if (!EcalWidget.init) {
@@ -26,7 +26,7 @@
                 return;
             }
             window.EcalSyncWidget = EcalWidget.init({
-                apiKey: 'uUt3tBXZMaf6mgd7Xkdr2FKMJru0qx0VbTk8nrA6Wc650b8966',
+                apiKey: 'iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b',
             });
             window.EcalWidget.showWhenReady();
         }
@@ -53,8 +53,7 @@
 </head>
 <body>
 <button class='ecal-sync-widget-button' id='ecal-sync-widget-button'
-        data-ecal-category='Fixture/Team/{{ECAL_USER_COUNTRYCODE}}/Los Angeles Dodgers'
-        data-ecal-widget-id='65c431b298b5d4000894641d'
+        data-ecal-widget-id='67fd9c08ad70b400092350f6'
         data-ecal-no-styling
         style="visibility: hidden;"
 >
