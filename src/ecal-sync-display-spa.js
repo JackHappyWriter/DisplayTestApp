@@ -1,12 +1,15 @@
 /*
  * EmbedEcalScripts enabled to only embed ecal once.
  */
-export function embedEcalScripts () {
+export function loadSyncDisplay (apikey) {
     if (!window.EcalWidget) {
-        // eslint-disable-next-line no-unused-expressions
-        !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//10.16.111.234:2090/button/v1/main.js' + '?t=' + Date.now());
-        // eslint-disable-next-line no-unused-expressions
-        // !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//staging-sync.ecal.com/button/v1/main.js' + '?t=' + Date.now());
+        const script = document.createElement('script');
+        const src = `//10.16.111.234:2090/v2/ecal.widget.min.js?t=${Date.now()}}`;
+        script.setAttribute('src', src);
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('data-ecal-apikey', apikey);
+        const head = document.getElementsByTagName('head')[0];
+        head.appendChild(script);
     }
 }
 
@@ -14,24 +17,27 @@ export function embedEcalScripts () {
 * place this script on NextJS / ReactJS component that will render the sync button(s)
 * call this function before the button is rendered.
 */
-export function renderEcalSyncButtons (apikey) {
-    embedEcalScripts();
-    clearTimeout(window.ecalSyncRenderTimeout);
+export function renderSyncDisplay (apikey) {
+    loadSyncDisplay(apikey);
+    clearTimeout(window.syncDisplayTO);
     function rebootWidgets () {
+      clearTimeout(window.syncDisplayTO);
       const eCalButton = document.getElementsByClassName('ecal-sync-widget-button');
       console.log('rebootWidgets(): ');
-      
-      if (window.EcalWidget &&
-          eCalButton.length > 0 &&
-          apikey) {
-        window.EcalWidget('destroy');
-        console.log('booting ecal widget', window.EcalWidget);
-        window.EcalWidget('boot', { apiKey: apikey });
+      if (window.EcalWidget && eCalButton.length > 0 && apikey) {
+        debounceBoot(apikey);
         return;
       }
       // reboot ecal widget if isn't availble yet
-      window.renderEcalSyncTO = setTimeout(rebootWidgets, 500);
+      window.syncDisplayTO = setTimeout(rebootWidgets, 500);
     }
-    window.ecalSyncRenderTimeout = setTimeout(rebootWidgets, 500);
+    window.syncDisplayTO = setTimeout(rebootWidgets, 500);
 }
- 
+
+function debounceBoot(apikey) {
+  console.log('DEBOUNCE');
+  clearTimeout(window.bootSyncDisplayTo);
+  window.bootSyncDisplayTo = setTimeout(() => {
+    window.EcalWidget('boot', { apiKey: apikey });
+  }, 1000);
+}

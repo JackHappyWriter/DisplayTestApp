@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { renderEcalSyncButtons } from './ecal-react';
+import { renderSyncDisplay } from './ecal-sync-display-spa';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     // renderEcalSyncButtons('omPbJveLsO6YQ8gjUUy6y0awtjd5oL2GOLTEKTxtX862b16aa0');
     console.log('loaded..');
     // environment
-    renderEcalSyncButtons('6ea0955297341b6b22f516a42177979d55821c6d7217b');
+    renderSyncDisplay('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
   }, []); 
 
   /*
@@ -31,7 +31,7 @@ function App() {
         </p>
 
         <div>
-          <button class='ecal-sync-widget-button' data-ecal-widget-id='5f3b51b63fe3d55d5c8b4567'>
+          <button class='ecal-sync-widget-button' data-ecal-widget-id='67f9e9647f847800089414d7'>
             Sync to Calendar
           </button>
         </div>
