@@ -3,13 +3,18 @@
  */
 export function loadSyncDisplay (apikey) {
     if (!window.EcalWidget) {
+      clearTimeout(window.loadSDTO);
+      // debounce adding script on launch...
+      window.loadSDTO = setTimeout(() => {
         const script = document.createElement('script');
         const src = `//10.16.111.234:2090/v2/ecal.widget.min.js?t=${Date.now()}}`;
         script.setAttribute('src', src);
         script.setAttribute('type', 'text/javascript');
         script.setAttribute('data-ecal-apikey', apikey);
+        script.setAttribute('data-ecal-spa', true);
         const head = document.getElementsByTagName('head')[0];
         head.appendChild(script);
+      },200);
     }
 }
 
@@ -21,23 +26,20 @@ export function renderSyncDisplay (apikey) {
     loadSyncDisplay(apikey);
     clearTimeout(window.syncDisplayTO);
     function rebootWidgets () {
-      clearTimeout(window.syncDisplayTO);
       const eCalButton = document.getElementsByClassName('ecal-sync-widget-button');
-      console.log('rebootWidgets(): ');
       if (window.EcalWidget && eCalButton.length > 0 && apikey) {
         debounceBoot(apikey);
         return;
       }
       // reboot ecal widget if isn't availble yet
-      window.syncDisplayTO = setTimeout(rebootWidgets, 500);
+      window.syncDisplayTO = setTimeout(rebootWidgets, 200);
     }
-    window.syncDisplayTO = setTimeout(rebootWidgets, 500);
+    window.syncDisplayTO = setTimeout(rebootWidgets, 200);
 }
 
 function debounceBoot(apikey) {
-  console.log('DEBOUNCE');
-  clearTimeout(window.bootSyncDisplayTo);
-  window.bootSyncDisplayTo = setTimeout(() => {
+  clearTimeout(window.syncDisplayBootTO);
+  window.syncDisplayBootTO = setTimeout(() => {
     window.EcalWidget('boot', { apiKey: apikey });
-  }, 1000);
+  }, 400);
 }
