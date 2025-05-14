@@ -7,10 +7,10 @@
 export function embedEcalScripts () {
     if (!window.EcalWidget) {
         // local with stage data
-        // !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//10.16.111.234:2090/button/v1/main.js' + '?t=' + Date.now());
+        !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//10.16.111.234:2090/button/v1/main.js' + '?t=' + Date.now());
         
         // stage env
-        !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//staging-sync.ecal.com/button/v1/main.js' + '?t=' + Date.now());
+        // !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//staging-sync.ecal.com/button/v1/main.js' + '?t=' + Date.now());
        
         // test environment
         // !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//testing-sync.ecal.com/button/v1/main.js' + '?t=' + Date.now());

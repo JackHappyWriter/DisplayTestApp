@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { renderSyncDisplay } from './ecal-sync-display-spa';
 
+import { renderEcalSyncButtons } from './ecal-react';
+
 function App() {
 
   useEffect(() => {
@@ -10,7 +12,8 @@ function App() {
     // renderEcalSyncButtons('omPbJveLsO6YQ8gjUUy6y0awtjd5oL2GOLTEKTxtX862b16aa0');
     console.log('loaded..');
     // environment
-    renderSyncDisplay('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
+    renderEcalSyncButtons('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
+    // renderSyncDisplay('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
   }, []); 
 
   /*
@@ -34,6 +37,16 @@ function App() {
           <button class='ecal-sync-widget-button' data-ecal-widget-id='67f9e9647f847800089414d7'>
             Sync to Calendar
           </button>
+
+          <button class='ecal-sync-widget-button' data-ecal-widget-id='67dd10ea7806100008df27cc'>
+            Sync to Calendar
+          </button>
+
+           
+          <button class="ecal-sync-widget-button"  data-ecal-widget-id="64c89749935553000d8d9de0" > 
+            Sycn now
+          </button>
+       
         </div>
       </header>
     </div>
