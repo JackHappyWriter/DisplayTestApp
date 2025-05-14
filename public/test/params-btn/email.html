@@ -1,0 +1,62 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <title>Premier League 2023/24 Digital Calendar & Fixture List</title>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Keep up to date with all your Premier League club fixtures. Visit the official website of the Premier League to download the 2023/24 season digital calendar.">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#38003C">
+  <link rel="shortcut icon" type="image/png" href="https://s3.amazonaws.com/staging-epl.ecal.com/PL_Lion.png" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+    <script src="//testing-sync.ecal.com/v2/ecal.widget.min.js"
+        data-ecal-apikey="iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b"
+        data-ecal-script-onload="widgetScriptLoaded"
+        data-ecal-autoboot="false"
+        > </script>
+  <script>
+    
+    function widgetScriptLoaded (e) {
+        console.log('widgetScriptLoaded()...');
+      setTimeout(initWidget, 200);
+    }
+ 
+    function initWidget () {
+        if (!EcalWidget.init) {
+            setTimeout(initWidget,200);
+            return;
+        }
+
+        console.log('page -> EcalWidget.init() -> ', EcalWidget.init);
+        window.EcalSyncWidget = EcalWidget.init({
+            apiKey: 'iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b',
+            // email: 'phil@gmail.com',
+            // autoSubscribe: true,
+            // referringPage: 'http://ecal.com',
+        });
+        window.EcalWidget.showWhenReady();
+    }
+    //   data-ecal-category="One-Schedule"
+  </script>
+  
+<button
+    class='ecal-sync-widget-button'
+    email="phil@gmail.com"
+    id='ecal-sync-widget-button'
+    data-ecal-widget-id='6811b59080f3bc0008272a80'
+    style="
+      visibility: hidden;"
+      >
+  Sync to Calendar
+</button>
+<div class="directlink-page">
+  <div class="ecal-directlink-page-background">
+  </div>
+</div>
+</body>
+</html>

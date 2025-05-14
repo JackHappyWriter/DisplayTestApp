@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { renderSyncDisplay } from './ecal-sync-display-spa';
-
 import { renderEcalSyncButtons } from './ecal-react';
 
 function App() {
@@ -12,8 +11,8 @@ function App() {
     // renderEcalSyncButtons('omPbJveLsO6YQ8gjUUy6y0awtjd5oL2GOLTEKTxtX862b16aa0');
     console.log('loaded..');
     // environment
-    renderEcalSyncButtons('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
-    // renderSyncDisplay('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
+    // renderEcalSyncButtons('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
+    renderSyncDisplay('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
   }, []); 
 
   /*
