@@ -1,13 +1,15 @@
 /*
  * EmbedEcalScripts enabled to only embed ecal once.
  */
+const host = '//192.168.0.8:2090';
+//const host = '//10.16.111.234:2090';
 export function loadSyncDisplay (apikey) {
     if (!window.EcalWidget) {
       clearTimeout(window.loadSDTO);
       // debounce adding script on launch...
       window.loadSDTO = setTimeout(() => {
         const script = document.createElement('script');
-        const src = `//10.16.111.234:2090/v2/ecal.widget.min.js?t=${Date.now()}}`;
+        const src = `${host}/v2/ecal.widget.min.js?t=${Date.now()}}`;
         script.setAttribute('src', src);
         script.setAttribute('type', 'text/javascript');
         script.setAttribute('data-ecal-apikey', apikey);

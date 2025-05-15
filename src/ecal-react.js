@@ -1,13 +1,18 @@
 /* eslint-disable no-sequences */
 /* eslint-disable no-useless-concat */
 /* eslint-disable no-unused-expressions */
+/* eslint-disable no-unused-vars */
 /*
  * EmbedEcalScripts enabled to only embed ecal once.
  */
+
+const host = '//192.168.0.8:2090';
+//const host = '//10.16.111.234:2090';
+
 export function embedEcalScripts () {
     if (!window.EcalWidget) {
         // local with stage data
-        !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//10.16.111.234:2090/button/v1/main.js' + '?t=' + Date.now());
+        !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', `${host}/button/v1/main.js` + '?t=' + Date.now());
         
         // stage env
         // !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//staging-sync.ecal.com/button/v1/main.js' + '?t=' + Date.now());
