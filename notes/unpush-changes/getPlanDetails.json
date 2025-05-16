@@ -1,0 +1,31 @@
+{"query":"query  ($i: GetPlanDetailsInput) {
+      getPlanDetails ( 
+          getPlanDetailsInput: $i
+      )
+     {
+          edges {
+              node {
+                  id
+                  name
+                  code
+                  description
+                  price
+                  addOns {
+                      id
+                      name
+                      handle
+                      description
+                      price
+                      type
+                      recurring
+                  }
+              }
+              cursor
+          }
+          pageInfo {
+              endCursor
+              hasNextPage
+          }
+          totalCount
+      } 
+  }","variables":{"i":{"currency":"us"}}}

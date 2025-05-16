@@ -14,11 +14,15 @@
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
     <script>
 
+        // var host = 'https://192.168.0.8:2090';
+        var host = 'https://10.16.111.234:2090';
+        // var host = 'https://sync.ecal.com';
+
         function widgetScriptLoaded (e) {
             setTimeout(initWidget, 200);
         }
 
-        !function (e, t, n, c, i, a, s) { i = i || 'EcalWidget', e.EcalWidgetObject = i, e[i] = e[i] || function () { (e[i].q = e[i].q || []).push(arguments) }, a = t.createElement(n), a.onload = widgetScriptLoaded, s = t.getElementsByTagName(n)[0], e[i].u = c, a.async = 1, a.src = c, s.parentNode.insertBefore(a, s) }(window, document, 'script', 'https://10.16.111.234:2090/button/v1/main.js' + '?t=' + Date.now());
+        !function (e, t, n, c, i, a, s) { i = i || 'EcalWidget', e.EcalWidgetObject = i, e[i] = e[i] || function () { (e[i].q = e[i].q || []).push(arguments) }, a = t.createElement(n), a.onload = widgetScriptLoaded, s = t.getElementsByTagName(n)[0], e[i].u = c, a.async = 1, a.src = c, s.parentNode.insertBefore(a, s) }(window, document, 'script',  `${host}/button/v1/main.js` + '?t=' + Date.now());
 
         function initWidget () {
             if (!EcalWidget.init) {
