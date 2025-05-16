@@ -12,8 +12,8 @@ function App() {
     // renderEcalSyncButtons('omPbJveLsO6YQ8gjUUy6y0awtjd5oL2GOLTEKTxtX862b16aa0');
     console.log('loaded..');
     // environment
-    // renderEcalSyncButtons('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
-    renderSyncDisplay('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
+    renderEcalSyncButtons('iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b');
+    // renderSyncDisplay('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
   }, []); 
 
   /*
@@ -22,6 +22,8 @@ function App() {
    *  
    * Stage Apikey HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff
    * Stage WidgetId: 67f9e9647f847800089414d7
+   *  67dd10ea7806100008df27cc
+   *  64c89749935553000d8d9de0
    * 
    *  EPL Apikey: 6ea0955297341b6b22f516a42177979d55821c6d7217b
    */
@@ -34,7 +36,7 @@ function App() {
         </p>
 
         <div>
-          <button class='ecal-sync-widget-button' data-ecal-widget-id='67f9e9647f847800089414d7'>
+          <button class='ecal-sync-widget-button' data-ecal-widget-id='67f75c52f941490008f8fc5e'>
             Sync to Calendar
           </button>
 

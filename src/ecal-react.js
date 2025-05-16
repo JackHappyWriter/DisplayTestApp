@@ -6,8 +6,9 @@
  * EmbedEcalScripts enabled to only embed ecal once.
  */
 
-const host = '//192.168.0.8:2090';
-//const host = '//10.16.111.234:2090';
+// const host = '//192.168.0.8:2090';
+// const host = '//10.16.111.234:2090';
+const host = '//testing-sync.ecal.com';
 
 export function embedEcalScripts () {
     if (!window.EcalWidget) {
@@ -22,6 +23,7 @@ export function embedEcalScripts () {
        
         // prod environment
         // !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//sync.ecal.com/button/v1/main.js' + '?t=' + Date.now());
+        setTimeout(removeScript, 400);
     }
 }
 
@@ -48,4 +50,13 @@ export function renderEcalSyncButtons (apikey) {
       window.renderEcalSyncTO = setTimeout(rebootWidgets, 500);
     }
     window.ecalSyncRenderTimeout = setTimeout(rebootWidgets, 500);
+    
 }
+
+function removeScript () {
+  console.log('REMOVE SCRIPT...');
+  var v1script = document.querySelector('script[src*="/button/v1/main.js"]');
+  if (v1script) {
+    v1script.parentElement.removeChild(v1script);
+  }
+};
