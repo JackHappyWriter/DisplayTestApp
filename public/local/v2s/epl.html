@@ -25,21 +25,17 @@
         console.log('widgetScriptLoaded()...');
       setTimeout(initWidget, 200);
     }
-
-    // !function (e, t, n, c, i, a, s) { i = i || 'EcalWidget', e.EcalWidgetObject = i, e[i] = e[i] || function () { (e[i].q = e[i].q || []).push(arguments) }, a = t.createElement(n), a.onload = widgetScriptLoaded,  s = t.getElementsByTagName(n)[0], e[i].u = c, a.async = 1, a.src = c, s.parentNode.insertBefore(a, s) }(window, document, 'script', 'https://staging-sync.ecal.com/button/v1/main.js' + '?t=' + Date.now());
-    // !function (e, t, n, c, i, a, s) { i = i || 'EcalWidget', e.EcalWidgetObject = i, e[i] = e[i] || function () { (e[i].q = e[i].q || []).push(arguments) }, a = t.createElement(n), a.onload = widgetScriptLoaded,  s = t.getElementsByTagName(n)[0], e[i].u = c, a.async = 1, a.src = c, s.parentNode.insertBefore(a, s) }(window, document, 'script', 'https://10.16.111.234:2090/button/v1/main.js' + '?t=' + Date.now());
-    
+ 
     function initWidget () {
         if (!EcalWidget.init) {
             setTimeout(initWidget,200);
             return;
         }
 
-        console.log('page -> EcalWidget.init() -> ', EcalWidget.init);
         window.EcalSyncWidget = EcalWidget.init({
             apiKey: 'HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff',
-            email: 'phil@gmail.com',
-            // autoSubscribe: true,
+            email: 'someemail@gmail.com',
+            // other params here
             referringPage: 'http://ecal.com',
         });
         window.EcalWidget.showWhenReady();

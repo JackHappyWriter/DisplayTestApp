@@ -8,7 +8,7 @@ const host = '//10.16.111.234:2090';  // forums local
 // const host = '//staging-sync.ecal.com'; // stage env
 // const host = '//sync.ecal.com'; // prod env
 
-export function loadSyncDisplay (apikey) {
+function loadSyncDisplay (apikey) {
     if (!window.EcalWidget) {
       clearTimeout(window.loadSDTO);
       // debounce adding script on launch...
@@ -30,7 +30,7 @@ export function loadSyncDisplay (apikey) {
 * place this script on NextJS / ReactJS component that will render the sync button(s)
 * call this function before the button is rendered.
 */
-export function renderSyncDisplay (apikey) {
+function renderSyncDisplay (apikey) {
     loadSyncDisplay(apikey);
     clearTimeout(window.syncDisplayTO);
     function bootSyncDisplay () {

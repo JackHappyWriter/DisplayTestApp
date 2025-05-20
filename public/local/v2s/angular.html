@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="syndDisplay">
+<head>
+    <title>Getting Started with AngularJS 1.x</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="//10.16.111.234:2095/js/ecal-sync-display-spa.js"></script>
+    <script>
+        angular.module('syndDisplay', [])
+        .controller('syncDisplayController', ['$scope', function($scope) {
+            $scope.renderSyncDisplay = renderSyncDisplay;
+        }]);
+    </script>
+</head>
+<body ng-controller="syncDisplayController">
+
+    <button class="ecal-sync-widget-button " data-ecal-widget-id="67f9e9647f847800089414d7" > Sync to Calendar </button>
+    {{ renderSyncDisplay('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff') }}
+
+</body>
+</html>

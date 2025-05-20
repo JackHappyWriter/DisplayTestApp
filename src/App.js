@@ -12,8 +12,8 @@ function App() {
     // renderEcalSyncButtons('omPbJveLsO6YQ8gjUUy6y0awtjd5oL2GOLTEKTxtX862b16aa0');
     console.log('loaded..');
     // environment
-    renderEcalSyncButtons('iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b');
-    // renderSyncDisplay('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
+    // renderEcalSyncButtons('iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b');
+    renderSyncDisplay('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
   }, []); 
 
   /*
@@ -43,7 +43,7 @@ function App() {
 
         <div>
           <button class='ecal-sync-widget-button'
-            data-ecal-widget-id='67f75c52f941490008f8fc5e'
+            data-ecal-widget-id='67f9e9647f847800089414d7'
             
             >
             EPL 
