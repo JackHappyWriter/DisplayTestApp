@@ -3,8 +3,8 @@
  */
 
 // const host = '//192.168.0.8:2090'; // home local
-const host = '//10.16.111.234:2090';  // forums local
-// const host = '//testing-sync.ecal.com'; // test env
+// const host = '//10.16.111.234:2090';  // forums local
+const host = '//testing-sync.ecal.com'; // test env
 // const host = '//staging-sync.ecal.com'; // stage env
 // const host = '//sync.ecal.com'; // prod env
 

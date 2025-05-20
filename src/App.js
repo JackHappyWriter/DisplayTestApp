@@ -5,6 +5,9 @@ import './App.css';
 import { renderSyncDisplay } from './ecal-sync-display-spa';
 import { renderEcalSyncButtons } from './ecal-react';
 
+
+// const apikey = 'HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff';
+const apikey = 'iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b';
 function App() {
 
   useEffect(() => {
@@ -13,7 +16,8 @@ function App() {
     console.log('loaded..');
     // environment
     // renderEcalSyncButtons('iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b');
-    renderSyncDisplay('HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff');
+    renderSyncDisplay(apikey);
+
   }, []); 
 
   /*
@@ -43,7 +47,7 @@ function App() {
 
         <div>
           <button class='ecal-sync-widget-button'
-            data-ecal-widget-id='67f9e9647f847800089414d7'
+            data-ecal-widget-id='67f75c52f941490008f8fc5e'
             
             >
             EPL 
