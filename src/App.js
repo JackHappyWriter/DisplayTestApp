@@ -5,9 +5,22 @@ import './App.css';
 import { renderSyncDisplay } from './ecal-sync-display-spa';
 import { renderEcalSyncButtons } from './ecal-react';
 
+// Just move the renderButtons or apikey
+import {
+  
+  renderProdFrostBankCases,
+  renderTestCases as renderButtons,
+  
+  apikeyTesting as apikey,
+  apikeyProdFrostBank,
+  apikeyStage,
+} from './buttons';
 
-// const apikey = 'HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff';
-const apikey = 'iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b';
+
+ 
+// frost bank center
+
+
 function App() {
 
   useEffect(() => {
@@ -37,37 +50,26 @@ function App() {
    *  Widget ID: '5f2b97cce344056b0e8b456b'
    *  data-ecal-category='Fixture/{{ECAL_USER_COUNTRYCODE}}/{{ECAL_USER_LANGUAGECODE}}/Premier League,PL2 - Division 1,PL2 - Division 2,U18 Premier League - North,U18 Premier League - South'
    */
+
+
+
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Prod Frost Bank Center
         </p>
 
         <div>
-          <button class='ecal-sync-widget-button'
-            data-ecal-widget-id='67f75c52f941490008f8fc5e'
-            
-            >
-            EPL 
-          </button>
 
-          <button class='ecal-sync-widget-button' data-ecal-widget-id='67dd10ea7806100008df27cc'>
-            Sync to Calendar
-          </button>
-
-           
-          <button class="ecal-sync-widget-button"  data-ecal-widget-id="64c89749935553000d8d9de0" > 
-            Sycn now
-          </button>
-       
+          { renderButtons() }
+          
         </div>
       </header>
     </div>
   );
 }
 
-// prod widgetId: 67f87226b9fb520008419089
-// test widgetId: 67e6448ab4c2140008f2bea3
 export default App;
