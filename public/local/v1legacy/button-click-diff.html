@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECAL Calendar Sync Sample</title>
+    <script>
+        !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//10.16.111.234:2090/button/v1/main.js' + '?t=' + Date.now());
+        (function(){function l() {var w=window.ECAL_SYNC_WIDGET=EcalWidget.init({
+            apiKey: 'mpK0ncK3vIDgKn4wMCbJmSabiBZTUFpBgyl3eUp8p062a7dc6c'
+            // apiKey: 'omPbJveLsO6YQ8gjUUy6y0awtjd5oL2GOLTEKTxtX862b16aa0'
+        });}
+        ;(window.attachEvent?window.attachEvent('onload', l):window.addEventListener('load', l, false));
+        }());
+      </script>
+    <!-- ECAL Widget Script -->
+    <!-- <script>
+        !function(e,t,n,c,i,a,s){i=i||'EcalWidget',e.EcalWidgetObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},a=t.createElement(n),s=t.getElementsByTagName(n)[0],e[i].u=c,a.async=1,a.src=c,s.parentNode.insertBefore(a,s)}(window,document,'script', '//sync.ecal.com/button/v1/main.js' + '?t=' + Date.now());
+        function initWidget() {
+            window.ECAL_SYNC_WIDGET = EcalWidget.init({
+                apiKey: '1UYm8xd1nwh2unJsep1J1nqDEUUzj4ABUw6HIvZk67a57e2b80',
+                widgetId: '682bee4df9e2f10008c1f8e4',
+                category: 'Fixture/{{ECAL_USER_COUNTRYCODE}}/MotoGP,Fixture/{{ECAL_USER_COUNTRYCODE}}/All Categories',
+                email: 'user@example.com' // Replace with actual user email if available
+            });
+        }
+        function showWidget() {
+            initWidget();
+            window.ECAL_SYNC_WIDGET.show();
+        }
+    </script> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Calendar Sync Example</h1>
+        <!-- Sync Button -->
+        <button class='ecal-sync-widget-button' data-ecal-widget-id='649e2933b94117000d15f466'>Sync to Calendar</button>
+        <button class='ecal-sync-widget-button' data-ecal-widget-id='63e1e2beee66ca000e76c4bb' category='Fixture/{{ECAL_USER_COUNTRYCODE}}/MotoGP'>Sync to Calendar</button>
+        <!-- Optional: Add some basic styling -->
+        <style>
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: center;
+            }
+            /* .sync-button {
+                background-color: #007BFF;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s;
+            }
+            .sync-button:hover {
+                background-color: #0056B3;
+            } */
+        </style>
+    </div>
+</body>
+</html>

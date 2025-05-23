@@ -16,26 +16,9 @@
 
     <script src="//10.16.111.234:2090/v2/ecal.widget.min.js"
         data-ecal-apikey="HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff"
-        data-ecal-script-onload="initWidget"
-        data-ecal-autoboot="false"
-        > </script>
-  <script>
-    
-    function initWidget () {
-        if (!EcalWidget.init) {
-            setTimeout(initWidget,200);
-            return;
-        }
-        window.EcalSyncWidget = EcalWidget.init({
-            apiKey: 'HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff',
-            email: 'someemail@gmail.com',
-            // other params here
-            referringPage: 'http://ecal.com',
-        });
-        // window.EcalWidget.showWhenReady();
-    }
 
-  </script>
+        > </script>
+  
   <style>
     html {
       -webkit-font-smoothing: antialiased;
@@ -106,6 +89,7 @@
 <button class='ecal-sync-widget-button' id='ecal-sync-widget-button'
     data-ecal-category="One-Schedule"
   data-ecal-widget-id='67f9e9647f847800089414d7'
+  data-ecal-email="someemail@gmail.com"
   data-ecal-no-styling >
   Sync to Calendar
 </button>

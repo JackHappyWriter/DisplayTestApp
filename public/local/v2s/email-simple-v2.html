@@ -14,28 +14,10 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 
-    <script src="//10.16.111.234:2090/v2/ecal.widget.min.js"
-        data-ecal-apikey="HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff"
-        data-ecal-script-onload="initWidget"
-        data-ecal-autoboot="false"
-        > </script>
-  <script>
-    
-    function initWidget () {
-        if (!EcalWidget.init) {
-            setTimeout(initWidget,200);
-            return;
-        }
-        window.EcalSyncWidget = EcalWidget.init({
-            apiKey: 'HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff',
-            email: 'someemail@gmail.com',
-            // other params here
-            referringPage: 'http://ecal.com',
-        });
-        // window.EcalWidget.showWhenReady();
-    }
-
-  </script>
+    <script src="//10.16.111.234:2090/v2/ecal.widget.min.js" data-ecal-apikey="HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff"> </script>
+    <script>
+        window.EcalWidget
+    </script>
   <style>
     html {
       -webkit-font-smoothing: antialiased;
@@ -105,7 +87,6 @@
 <body>
 <button class='ecal-sync-widget-button' id='ecal-sync-widget-button'
     data-ecal-category="One-Schedule"
-  data-ecal-widget-id='67f9e9647f847800089414d7'
   data-ecal-no-styling >
   Sync to Calendar
 </button>

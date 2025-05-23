@@ -22,22 +22,17 @@
   <script>
     
     function widgetScriptLoaded (e) {
-        console.log('widgetScriptLoaded()...');
-      setTimeout(initWidget, 200);
-    }
- 
-    function initWidget () {
-        if (!EcalWidget.init) {
-            setTimeout(initWidget,200);
-            return;
-        }
 
-        console.log('page -> EcalWidget.init() -> ', EcalWidget.init);
+      console.log('page -> EcalWidget.init() -> ', EcalWidget.init);
         window.EcalSyncWidget = EcalWidget.init({
             apiKey: 'HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff',
             email: 'phil@gmail.com', 
         });
-        window.EcalWidget.showWhenReady();
+    }
+ 
+    function initWidget () {
+       
+        // window.EcalWidget.showWhenReady();
     }
     //   data-ecal-category="One-Schedule"
   </script>
