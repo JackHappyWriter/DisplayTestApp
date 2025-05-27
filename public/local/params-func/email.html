@@ -14,7 +14,7 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 
-    <script src="//10.16.111.234:2090/v2/ecal.widget.min.js"
+    <script src="//10.16.111.234:2090/v2/ecal.widget.js"
         data-ecal-apikey="HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff"
         data-ecal-script-onload="widgetScriptLoaded"
         data-ecal-autoboot="false"
@@ -24,10 +24,13 @@
     function widgetScriptLoaded (e) {
 
       console.log('page -> EcalWidget.init() -> ', EcalWidget.init);
+       
         window.EcalSyncWidget = EcalWidget.init({
             apiKey: 'HOPTGTOFd8VvGniFyTmFWdToYlARFcbihJs5BCE620b90007ff',
             email: 'phil@gmail.com', 
         });
+        window.EcalWidget.showWhenReady();
+        
     }
  
     function initWidget () {

@@ -16,22 +16,14 @@
 
     <script src="//testing-sync.ecal.com/v2/ecal.widget.min.js"
         data-ecal-apikey="iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b"
-        data-ecal-script-onload="widgetScriptLoaded"
+        data-ecal-script-onload="initWidget"
         data-ecal-autoboot="false"
         > </script>
   <script>
-    
-    function widgetScriptLoaded (e) {
-        console.log('widgetScriptLoaded()...');
-      setTimeout(initWidget, 200);
-    }
+   
  
     function initWidget () {
-        if (!EcalWidget.init) {
-            setTimeout(initWidget,200);
-            return;
-        }
-
+      console.log('initWidget()...');
         console.log('page -> EcalWidget.init() -> ', EcalWidget.init);
         window.EcalSyncWidget = EcalWidget.init({
             apiKey: 'iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b',
@@ -46,7 +38,7 @@
   
 <button
     class='ecal-sync-widget-button'
-    email="phil@gmail.com"
+    data-ecal-email="phil@gmail.com"
     id='ecal-sync-widget-button'
     data-ecal-widget-id='6811b59080f3bc0008272a80'
     style="

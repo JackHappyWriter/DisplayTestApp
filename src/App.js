@@ -7,10 +7,8 @@ import { renderEcalSyncButtons } from './ecal-react';
 
 // Just move the renderButtons or apikey
 import {
-  
   renderProdFrostBankCases,
   renderTestCases as renderButtons,
-  
   apikeyTesting as apikey,
   apikeyProdFrostBank,
   apikeyStage,
@@ -30,7 +28,6 @@ function App() {
     // environment
     // renderEcalSyncButtons('iO4vouUk2ZQ1FvdIKIrlZGdTSztVhkTcBhdRJkIxLX86242a0b');
     renderSyncDisplay(apikey);
-
   }, []); 
 
   /*

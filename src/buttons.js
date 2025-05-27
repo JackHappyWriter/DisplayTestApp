@@ -17,6 +17,7 @@ export function renderTestCases ()  {
             <button class="ecal-sync-widget-button small e-cal" 
                 title="Sync to Calendar" 
                     data-ecal-widget-id="6811b59080f3bc0008272a80"
+                    data-ecal-autoshow
                     data-ecal-calendar-reference="armstrong,FNC-Schedules" data-ecal-no-styling="">
                 San Antonio
             </button>
