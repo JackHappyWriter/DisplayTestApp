@@ -1,0 +1,28 @@
+{
+    "optin": true,
+    "email": "phil.ruiz.ardona@gmail.com",
+    "requiredAge": 0,
+    "parentConsentAge": 0,
+    "optin_id": 2969,
+    "calendarIds": [
+        "6826d3c26e355e0008c2744d"
+    ],
+    "device": "mobile",
+    "os": "iOS",
+    "application": "google",
+    "fingerprint": "17f212006d804ad078b2e128bfc29a0d",
+    "icsFilename": "ECALtest-Stage",
+    "location": {
+        "zip_code": "3121",
+        "latitude": -37.8335,
+        "longitude": 145.0012,
+        "country_name": "Australia",
+        "country_code": "AU",
+        "state_name": "Victoria",
+        "timezone": "Australia/Melbourne",
+        "state_code": "VIC",
+        "city_name": "Melbourne"
+    },
+    "oauthSessionId": "9b29a9a1d50f416ca52d1dc0b9ebb043",
+    "subscriptionWidgetId": "6826d402cfcc1400085df785"
+}

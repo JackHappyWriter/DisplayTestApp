@@ -1,0 +1,47 @@
+{
+    "data": {
+        "user_type": "returning",
+        "calendar_type": "google",
+        "source": "email",
+        "device": {
+            "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36",
+            "type": "mobile",
+            "os": "Android",
+            "os_version": "10",
+            "browser": "Chrome"
+        },
+        "location": {
+            "zip_code": "3121",
+            "latitude": -37.8335,
+            "longitude": 145.0012,
+            "country_name": "Australia",
+            "country_code": "AU",
+            "state_name": "Victoria",
+            "timezone": "Australia/Melbourne",
+            "state_code": "VIC",
+            "city_name": "Melbourne"
+        }
+    },
+    "keys": {
+        "calendar_ids": [
+            "6826d3c26e355e0008c2744d"
+        ],
+        "widget_id": "6826d402cfcc1400085df785",
+        "user_ids": [
+            "6823f4f9a1718600089fdeca"
+        ],
+        "publisher_id": 14414
+    },
+    "calendar_type": "google",
+    "name": "user_registration_completed",
+    "type": "user",
+    "emitter": {
+        "system": "widgets",
+        "component": "uniwidget"
+    },
+    "emit_timestamp": "2025-05-19T01:55:58.479Z",
+    "version": "1.1",
+    "id": [
+        "6823f4f9a1718600089fdeca"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "email": "jack.happy.writing@outlook.com",
+    "requiredAge": 0,
+    "parentConsentAge": 0,
+    "id": "67f99f19603db50008d59391",
+    "calendarIds": [
+        "6826d3c26e355e0008c2744d"
+    ],
+    "device": "mobile",
+    "os": "iOS",
+    "application": "office365",
+    "fingerprint": "305ec34848b57bf733cfc1e01653588b",
+    "icsFilename": "ECALtest-Stage",
+    "location": {
+        "zip_code": "3121",
+        "latitude": -37.8335,
+        "longitude": 145.0012,
+        "country_name": "Australia",
+        "country_code": "AU",
+        "state_name": "Victoria",
+        "timezone": "Australia/Melbourne",
+        "state_code": "VIC",
+        "city_name": "Melbourne"
+    },
+    "oauthSessionId": "a898bf6526bc4cfd84be2b32e085322d",
+    "subscriptionWidgetId": "6826d402cfcc1400085df785"
+}

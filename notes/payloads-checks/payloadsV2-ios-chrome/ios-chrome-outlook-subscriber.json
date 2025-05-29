@@ -1,0 +1,39 @@
+{
+    "optin": true,
+    "secondary_optin": false,
+    "optin3": false,
+    "optin4": false,
+    "optin_id": 2969,
+    "country": "au",
+    "email": "damontest61@outlook.com",
+    "location": {
+        "country_code": "AU",
+        "country_name": "Australia",
+        "state_code": "VIC",
+        "state_name": "Victoria",
+        "zip_code": "3121",
+        "city_name": "Melbourne",
+        "latitude": -37.8335,
+        "longitude": 145.0012,
+        "timezone": "Australia/Melbourne",
+        "securityTokenEnabled": false,
+        "status": 200,
+        "statusLong": "OK"
+    },
+    "custom_fields": [],
+    "subscriptionWidgetId": "6826d402cfcc1400085df785",
+    "calendarIds": [
+        "6826d3c26e355e0008c2744d"
+    ],
+    "icsFilename": "ECALtest-Stage",
+    "device": "Mobile",
+    "os": "iOS",
+    "application": "windowslive",
+    "fingerprint": "305ec34848b57bf733cfc1e01653588b",
+    "codeIndex": 2,
+    "phoneCountry": "au",
+    "countryCode": "61",
+    "oauthSessionId": "1de6c41b87e747019b2e9771c0a44b9c",
+    "requiredAge": 0,
+    "parentConsentAge": 0
+}

@@ -1,0 +1,53 @@
+{
+    "id": [
+        "6823f4f9a1718600089fdeca"
+    ],
+    "user_type": "returning",
+    "calendar_type": "android",
+    "calendar_ids": [
+        "6826d3c26e355e0008c2744d"
+    ],
+    "type": "user",
+    "name": "user_registration_completed",
+    "version": "1.1",
+    "emitter": {
+        "system": "widgets",
+        "component": "uniwidget"
+    },
+    "keys": {
+        "user_ids": [
+            "6823f4f9a1718600089fdeca"
+        ],
+        "widget_id": "6826d402cfcc1400085df785",
+        "publisher_id": 14414,
+        "calendar_ids": [
+            "6826d3c26e355e0008c2744d"
+        ]
+    },
+    "data": {
+        "source": "email",
+        "user_type": "returning",
+        "calendar_type": "android",
+        "location": {
+            "country_code": "AU",
+            "country_name": "Australia",
+            "state_code": "VIC",
+            "state_name": "Victoria",
+            "zip_code": "3121",
+            "city_name": "Melbourne",
+            "latitude": -37.8335,
+            "longitude": 145.0012,
+            "timezone": "Australia/Melbourne",
+            "securityTokenEnabled": false,
+            "status": 200,
+            "statusLong": "OK"
+        },
+        "device": {
+            "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36",
+            "browser": "Chrome",
+            "os": "Android",
+            "os_version": "10",
+            "type": "mobile"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+Subscriber API
+
+'/apiv3/subscriber?apiKey=mpK0ncK3vIDgKn4wMCbJmSabiBZTUFpBgyl3eUp8p062a7dc6c&traceId=5eaee103-377f-4200-a3e3-271dcf640300'
+
+
+Complete Subscription API
+apiv3/complete-subscription?apiKey=mpK0ncK3vIDgKn4wMCbJmSabiBZTUFpBgyl3eUp8p062a7dc6c&traceId=9a0a83b3-2a1a-46db-bef9-a5214c5aa07e
+
+
+

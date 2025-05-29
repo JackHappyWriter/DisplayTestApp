@@ -1,0 +1,54 @@
+{
+    "id": [
+        "682a86e928e96500091b716e"
+    ],
+    "user_type": "new",
+    "calendar_type": "apple",
+    "application": "apple",
+    "calendar_ids": [
+        "6826d3c26e355e0008c2744d"
+    ],
+    "type": "user",
+    "name": "user_registration_completed",
+    "version": "1.1",
+    "emitter": {
+        "system": "widgets",
+        "component": "uniwidget"
+    },
+    "keys": {
+        "user_ids": [
+            "682a86e928e96500091b716e"
+        ],
+        "widget_id": "6826d402cfcc1400085df785",
+        "publisher_id": 14414,
+        "calendar_ids": [
+            "6826d3c26e355e0008c2744d"
+        ]
+    },
+    "data": {
+        "source": "email",
+        "user_type": "new",
+        "calendar_type": "apple",
+        "location": {
+            "country_code": "AU",
+            "country_name": "Australia",
+            "state_code": "VIC",
+            "state_name": "Victoria",
+            "zip_code": "3121",
+            "city_name": "Melbourne",
+            "latitude": -37.8335,
+            "longitude": 145.0012,
+            "timezone": "Australia/Melbourne",
+            "securityTokenEnabled": false,
+            "status": 200,
+            "statusLong": "OK"
+        },
+        "device": {
+            "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1",
+            "browser": "Mobile Safari",
+            "os": "iOS",
+            "os_version": "18.2.1",
+            "type": "mobile"
+        }
+    }
+}

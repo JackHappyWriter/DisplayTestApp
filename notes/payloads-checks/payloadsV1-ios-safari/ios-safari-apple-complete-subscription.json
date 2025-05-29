@@ -1,0 +1,47 @@
+{
+    "data": {
+        "user_type": "new",
+        "calendar_type": "apple",
+        "source": "email",
+        "device": {
+            "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1",
+            "type": "mobile",
+            "os": "iOS",
+            "os_version": "16.3.1",
+            "browser": "Mobile Safari"
+        },
+        "location": {
+            "zip_code": "3121",
+            "latitude": -37.8335,
+            "longitude": 145.0012,
+            "country_name": "Australia",
+            "country_code": "AU",
+            "state_name": "Victoria",
+            "timezone": "Australia/Melbourne",
+            "state_code": "VIC",
+            "city_name": "Melbourne"
+        }
+    },
+    "keys": {
+        "calendar_ids": [
+            "6826d3c26e355e0008c2744d"
+        ],
+        "widget_id": "6826d402cfcc1400085df785",
+        "user_ids": [
+            "682a7636deb3c20008994d17"
+        ],
+        "publisher_id": 14414
+    },
+    "calendar_type": "apple",
+    "name": "user_registration_completed",
+    "type": "user",
+    "emitter": {
+        "system": "widgets",
+        "component": "uniwidget"
+    },
+    "emit_timestamp": "2025-05-19T00:07:18.962Z",
+    "version": "1.1",
+    "id": [
+        "682a7636deb3c20008994d17"
+    ]
+}

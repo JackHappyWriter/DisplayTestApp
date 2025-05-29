@@ -1,0 +1,27 @@
+{
+    "email": "damontest123@gmail.com",
+    "requiredAge": 0,
+    "parentConsentAge": 0,
+    "id": "6823f4f9a1718600089fdeca",
+    "calendarIds": [
+        "6826d3c26e355e0008c2744d"
+    ],
+    "device": "mobile",
+    "os": "Android",
+    "application": "google",
+    "fingerprint": "f77412b1d93376388186c28d88bdc472",
+    "icsFilename": "ECALtest-Stage",
+    "location": {
+        "zip_code": "3121",
+        "latitude": -37.8335,
+        "longitude": 145.0012,
+        "country_name": "Australia",
+        "country_code": "AU",
+        "state_name": "Victoria",
+        "timezone": "Australia/Melbourne",
+        "state_code": "VIC",
+        "city_name": "Melbourne"
+    },
+    "oauthSessionId": "aa31a8f1368947f0abd6eed41b459150",
+    "subscriptionWidgetId": "6826d402cfcc1400085df785"
+}

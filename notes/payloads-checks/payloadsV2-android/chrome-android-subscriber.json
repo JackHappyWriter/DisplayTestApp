@@ -1,0 +1,34 @@
+{
+    "optin": false,
+    "secondary_optin": false,
+    "optin3": false,
+    "optin4": false,
+    "optin_id": 2969,
+    "location": {
+        "country_code": "AU",
+        "country_name": "Australia",
+        "state_code": "VIC",
+        "state_name": "Victoria",
+        "zip_code": "3121",
+        "city_name": "Melbourne",
+        "latitude": -37.8335,
+        "longitude": 145.0012,
+        "timezone": "Australia/Melbourne",
+        "securityTokenEnabled": false,
+        "status": 200,
+        "statusLong": "OK"
+    },
+    "custom_fields": [],
+    "subscriptionWidgetId": "6826d402cfcc1400085df785",
+    "calendarIds": [
+        "6826d3c26e355e0008c2744d"
+    ],
+    "icsFilename": "ECALtest-Stage",
+    "device": "Mobile",
+    "os": "Android",
+    "application": "android",
+    "fingerprint": "19751e92460699d825c403b39df3e02e",
+    "oauthSessionId": "be77dc146130492787687eb5602219b2",
+    "email": "damontest123@gmail.com",
+    "id": "6823f4f9a1718600089fdeca"
+}
