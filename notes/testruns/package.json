@@ -1,0 +1,9 @@
+{
+  "name": "testruns",
+  "version": "1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/firestore": "^7.11.1"
+  }
+}
